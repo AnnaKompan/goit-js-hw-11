@@ -10,6 +10,7 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+  margin: 0;
 }
 
 img {
@@ -65,12 +66,14 @@ img {
 .loadMore-btn {
   margin: 0 auto;
   margin-top: 50px;
-  display: block;
-}
-
-button:disabled {
-  background-color: #c1c1c1;
-  cursor: not-allowed;
+  display: none;
+  background-color: #188ce8;
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  font-size: 22px;
+  border: none;
+  border-radius: 5px;
 }
 
 .hidden {
@@ -78,24 +81,31 @@ button:disabled {
 }
 
 .gallery {
-  margin-top: 10px;
+  padding-top: 100px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
-  /* padding: 0;  */
 }
 
 .info {
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;
+  justify-content: space-between;
 }
 
 .photo-card {
   display: block;
-  max-width: 640px;
-  max-height: 480px;
+  width: 320px;
   background-size: contain;
+}
+
+.info-item {
+  text-align: center;
+}
+
+.gallery-img {
+  height: 210px;
 }
